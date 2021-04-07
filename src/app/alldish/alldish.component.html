@@ -1,0 +1,40 @@
+<!-- all dish -->
+<div class="container">
+  <div class="row row-cols-3 row-cols-md-3 g-4">
+    <div class="col" *ngFor="let adish of adishArray" style="margin-bottom: 40pt;">
+      <div class="card h-100" style="background-color: azure;">
+        <img [src]="adish?.photo" class="card-img-top" alt="photo">
+        <div class="card-body">
+          <h5 class="card-title">Restaurant : {{adish?.restaurantname}}</h5>
+          <h6>Dish : {{adish?.dishname}}</h6>
+          <p>Price : {{adish?.dishprice}}</p>
+          <p>{{adish?.dishdescription}}</p>
+        </div>
+        <div class="card-footer d-grid d-md-flex justify-content-md-end">
+          <button class="btn " style="background-image: linear-gradient(to right, white,rgb(164, 201, 164));" (click)="add(adish)">Add</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Restaurant -->
+<div class="container">
+  <div class="row row-cols-3 row-cols-md-3 g-4">
+    <div class="col" *ngFor="let restaurant of restaurantArray" style="margin-bottom: 40pt;">
+      <div class="card h-100" style="background-color: azure;">
+        <img [src]="adish?.photo" class="card-img-top" alt="photo">
+        <div class="card-body">
+          <h5 class="card-title">Restaurant : {{adish?.restaurantname}}</h5>
+          <h6>Dish : {{adish?.dishname}}</h6>
+          <p>Price : {{adish?.dishprice}}</p>
+          <p>{{adish?.dishdescription}}</p>
+        </div>
+        <div class="card-footer d-grid d-md-flex justify-content-md-end">
+          <button class="btn " style="background-image: linear-gradient(to right, white,rgb(164, 201, 164));" (click)="show(restaurant)">Show</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

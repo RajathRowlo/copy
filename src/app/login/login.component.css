@@ -1,0 +1,29 @@
+.login{
+    background-image: url(https://image.freepik.com/free-photo/view-frame-with-pizza-black-background_23-2148308883.jpg);
+     /* Full height */
+  height: 50%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  
+}
+
+.vl{
+    border-left: 4px solid white;
+  height: 350px;
+  border-radius: 1px;
+}
+
+.login{
+    padding-top: 30px;
+}
+
+.centered {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
